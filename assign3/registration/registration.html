@@ -1,0 +1,170 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="registration.js" type="text/javascript"></script>
+	<title>BTI220_162A15</title>
+	<link href="registration.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+<header>
+	<div class="header-container">
+	<h2>Enter your Information Here</h2>
+	</div>
+</header>
+<div class="main-container">
+
+	<div class="navigation">
+		<nav>
+		<a href="../index.html">Welcome</a>
+		<a href="../login/login.html">Login</a>
+		<a href="../catal/catal.html">Catalog</a>
+		<a href="../extra/extra.html">Extra</a>
+		</nav>
+	</div>
+	
+	<div class="body">
+		
+		<div class="form">
+		<form id="userinfo" method="post" onsubmit="return validateForm();">
+		<h3>Contact Info</h3>
+		
+		<div class="info">
+			<label>Gender</label>
+		</div>
+		<input type="radio" id="gender" value="male" required />Male<br>
+		<input type="radio" id="gender2" value="female"/>Female<br>
+		
+		<div class="info">
+			<label>First Name</label>
+		</div>
+		<input type="text" id="firstName" value="First Name" required />
+		<br>
+		
+		<div class="info">
+			<label>Last Name</label>
+		</div>
+		<input type="text" id="last_Name" value="Last Name" required />
+		<br>
+		
+		<div class="info">
+				<label>Email</label>
+		</div>
+		<input type="email" id="email" value="Email" required />
+		<br>
+		
+		<div class="info">
+				<label>Phone #</label>
+		</div>
+		<input type="text" id="phone" value="Phone Number" required />
+		<br>
+		
+		<div class="info">
+			<label>Username</label>
+		</div>
+		<input type="text" id="username" value="Username" required />
+		<br>
+		
+		<div class="info">
+			<label>Password</label>
+		</div>
+		<input type="password" id="password1" value="Password" required />
+		<br>
+		
+		<div class="info">
+			<label>Re-type Password</label>
+		</div>
+		<input type="password" id="password2" value="Password" required />
+		<br>
+		
+		<h3>Shipping Info</h3>
+		
+		<div class="info">
+			<label>Unit #</label>
+		</div>
+		<input type="text" id="unit" value="Unit" required />
+		<br>
+		
+		<div class="info">
+			<label>Street</label>
+		</div>
+		<input type="text" id="street" value="Street" required />
+		<br>
+		
+		<div class="info">
+			<label>City</label>
+		</div>
+		<input type="text" id="city" value="City" required />
+		<br>
+		
+		<div class="info">
+			<label>Postal Code</label>
+		</div>
+		<input type="text" id="postalcode" value="Postal Code" required />
+		<br>
+		
+		<div class="info">
+			<label>Province</label>
+		</div>
+		<select multiple required>
+			<option value="ontario">ON</option>
+			<option value="manitoba">MB</option>
+			<option value="alberta">AB</option>
+			<option value="saskatchewan">SK</option>
+			<option value="princeedwardisaland">PE</option>
+			<option value="newfoundland">NL</option>
+			<option value="novascotia">NS</option>
+			<option value="newbrunswick">NB</option>
+			<option value="quebec">QC</option>
+			<option value="britishcolumbia">BC</option>
+			<option value="yukon">YT</option>
+			<option value="northwestterritories">NT</option>
+			<option value="nunavut">NU</option>
+		</select>
+		<br>
+		
+		<div class="info">
+			<label>Comments</label>
+		</div>
+		<textarea id="comments"></textarea>
+		<br>
+		
+		<div class="contact">
+			<label>How do you want us to contact you?</label>
+		</div>
+		<br>
+		<input type="checkbox" value="twitter">Twitter<br>
+		<input type="checkbox" value="facebook">Facebook<br>
+		<input type="checkbox" value="email">Email<br>
+		
+		
+		<input type="submit" id="Send" value="Send"/>
+		<input type="reset" id="Reset" value="Reset" onclick="clearErrors()"/>
+		
+		<input type="hidden" name="lastName" id="lastName" value="losi" />
+		<input type="hidden" name="studentId" id="studentId" value="015202153" />
+
+		</form>
+		</div>
+	</div>
+	
+	<div class="sidepanel">
+		<div>
+		<h2>Errors</h2>
+			<div id="errors">
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="footer-container">
+		<script>
+		var dt=new Date(document.lastModified); // Get document last modified date 
+		document.write('This page was last updated on '+dt.toLocaleString()) 
+		</script>
+	</div>
+</footer>
+
+</body>
+</html>

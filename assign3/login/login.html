@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="login.js" type="text/javascript"></script>
+	<title>BTI220_162A15</title>
+	<link href="login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+	<div class="header-container">
+	<h2>Login Page</h2>
+	</div>
+</header>
+<div class="main-container">
+
+	<div class="navigation">
+		<nav>
+		<a href="../index.html">Welcome</a><br>
+		<a href="../registration/registration.html"> Registration</a>
+		<a href="../catal/catal.html">Catalog</a>
+		<a href="../extra/extra.html">Extra</a>
+		</nav>
+	</div>
+	
+	<div class="body">
+		<form id="user" method="post" onsubmit="return validate();">
+		
+		<div class="wrapper">
+		<div class="info">
+		<label> Username</label>
+		</div>
+		<input type="text" id="username" value="Username" required />
+		<br>
+		
+		<div class="info">
+		<label>Password</label>
+		</div>
+		<input type="password" id="password1" value="Password" required />
+		<br>
+		
+		<input type="submit" name="Send" value="Send"/>
+		<input type="reset" name="Reset" value="Reset"/>
+		</div>
+		
+		<input type="hidden" name="lastName" id="lastName" value="losi" />
+		<input type="hidden" name="studentId" id="studentId" value="015202153" />
+
+		</form>
+	</div>
+	
+	<div class="sidepanel">
+	<h2>Errors</h2>
+	</div>
+</div>
+<footer>
+	<div class="footer-container">
+		<script>
+		var dt=new Date(document.lastModified); // Get document last modified date 
+		document.write('This page was last updated on '+dt.toLocaleString()) 
+		</script>
+	</div>
+</footer>
+
+</body>
+</html>

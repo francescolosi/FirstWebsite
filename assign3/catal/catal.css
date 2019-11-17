@@ -1,0 +1,121 @@
+.header-container{
+	border: 1px solid black;
+	max-width:960px;
+	padding:10px;
+	margin: 0 auto;
+	color: red;
+	border-radius: 15px;
+}
+
+.main-container{
+	max-width:960px;
+	font-size:14px;
+	margin:auto;	
+}
+
+.footer-container {
+	padding: 10px;
+	MAX-width:960px;
+	margin: 0 auto;
+	border-radius: 20px;
+	border: 1px solid black;
+	background-color: blue;
+	
+}
+
+.navigation{
+	
+	padding:3px;
+	max-width:75px;
+	margin: 5px;
+	height: 700px;
+	border: 1px solid black;
+	float: left;	
+		
+}
+
+.body{
+	
+	padding:3px;
+	float: left;
+	margin:5px;
+	max-height: 100%;
+	max-width: 700px;
+	border: 1px dashed black;
+	
+}
+
+div p{
+	
+	font-size: 17px;
+}
+
+div h2{
+	
+	font-size: 27px;
+}
+
+.sidepanel{
+	
+	padding:3px;
+	width:125px;
+	margin: 5px;
+	height: 350px;
+	border: 1px solid black;
+	float: left;
+	
+}
+
+.search{
+	
+	width: 100%;
+	height: 20px;
+	
+}
+
+.searchbar{
+	
+	float:right;
+	border-radius: 3px;
+	
+}
+
+.button{
+	
+	margin-right:45px;
+	float: right;
+	margin-left: 5px;
+	
+}
+
+div.boxed{
+	margin-left: 41px;
+	margin-bottom:20px;
+	margin-top: 20px;
+	border: 1px solid black;
+	width: 275px;
+	height: 420px;
+	padding: 5px;
+	
+	float: left;
+
+}
+
+div.boxed img{
+	
+	height: 50%;
+	width: 100%;
+	
+}
+
+body{
+	background-color:#f1f1f1;
+	color: #333;
+}
+
+footer{
+	padding:20px;
+	font-size:13px;
+	clear: both;
+	color: red;
+}
